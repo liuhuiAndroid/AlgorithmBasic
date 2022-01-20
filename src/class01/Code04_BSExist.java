@@ -2,6 +2,9 @@ package class01;
 
 import java.util.Arrays;
 
+/**
+ * 二分法
+ */
 public class Code04_BSExist {
 
 	public static boolean exist(int[] sortedArr, int num) {

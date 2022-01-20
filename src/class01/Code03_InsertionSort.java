@@ -2,6 +2,9 @@ package class01;
 
 import java.util.Arrays;
 
+/**
+ * 插入排序
+ */
 public class Code03_InsertionSort {
 
 	public static void insertionSort(int[] arr) {
@@ -9,6 +12,11 @@ public class Code03_InsertionSort {
 			return;
 		}
 		// 不只1个数
+		// 0 ~ 1
+		// 0 ~ 2
+		// 0 ~ 3
+		// 0 ~ i
+		// 0 ~ n-1
 		for (int i = 1; i < arr.length; i++) { // 0 ~ i 做到有序
 			for (int j = i - 1; j >= 0 && arr[j] > arr[j + 1]; j--) {
 				swap(arr, j, j + 1);
