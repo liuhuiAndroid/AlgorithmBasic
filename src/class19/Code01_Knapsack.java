@@ -1,5 +1,10 @@
 package class19;
 
+/**
+ * 背包问题
+ * 重量数组：w
+ * 价值数组：v
+ */
 public class Code01_Knapsack {
 
 	// 所有的货，重量和价值，都在w和v数组里
@@ -10,12 +15,15 @@ public class Code01_Knapsack {
 		if (w == null || v == null || w.length != v.length || w.length == 0) {
 			return 0;
 		}
-		// 尝试函数！
+		// 尝试函数
 		return process(w, v, 0, bag);
 	}
 
 	// index 0~N
 	// rest 负~bag
+	// 当前考虑到了index货物，index。。。所有到货物都可以自由选择
+	// 注意所做的选择不能超过背包容量
+	// 返回最大价值
 	public static int process(int[] w, int[] v, int index, int rest) {
 		if (rest < 0) {
 			return -1;
@@ -23,7 +31,9 @@ public class Code01_Knapsack {
 		if (index == w.length) {
 			return 0;
 		}
+		// 不要当前的货
 		int p1 = process(w, v, index + 1, rest);
+		// 要当前的货
 		int p2 = 0;
 		int next = process(w, v, index + 1, rest - w[index]);
 		if (next != -1) {
@@ -32,6 +42,7 @@ public class Code01_Knapsack {
 		return Math.max(p1, p2);
 	}
 
+	// 动态规划
 	public static int dp(int[] w, int[] v, int bag) {
 		if (w == null || v == null || w.length != v.length || w.length == 0) {
 			return 0;
@@ -53,8 +64,8 @@ public class Code01_Knapsack {
 	}
 
 	public static void main(String[] args) {
-		int[] weights = { 3, 2, 4, 7, 3, 1, 7 };
-		int[] values = { 5, 6, 3, 19, 12, 4, 2 };
+		int[] weights = { 3, 2, 4, 7,  3,  1, 7 };
+		int[] values  = { 5, 6, 3, 19, 12, 4, 2 };
 		int bag = 15;
 		System.out.println(maxValue(weights, values, bag));
 		System.out.println(dp(weights, values, bag));
