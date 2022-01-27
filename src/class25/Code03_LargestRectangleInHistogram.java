@@ -2,7 +2,11 @@ package class25;
 
 import java.util.Stack;
 
-// 测试链接：https://leetcode.com/problems/largest-rectangle-in-histogram
+/**
+ * 给定一个非负数组arr，代表直方图
+ * 返回直方图的最大长方形面积
+ * 测试链接：https://leetcode.com/problems/largest-rectangle-in-histogram
+ */
 public class Code03_LargestRectangleInHistogram {
 
 	public static int largestRectangleArea1(int[] height) {
