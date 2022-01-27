@@ -2,7 +2,10 @@ package class24;
 
 import java.util.LinkedList;
 
-// 测试链接：https://leetcode.com/problems/gas-station
+/**
+ * 加油站的良好出发点问题
+ * 测试链接：https://leetcode.com/problems/gas-station
+ */
 public class Code03_GasStation {
 
 	// 这个方法的时间复杂度O(N)，额外空间复杂度O(N)

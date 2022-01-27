@@ -4,6 +4,14 @@ import java.util.HashMap;
 import java.util.Map.Entry;
 import java.util.LinkedList;
 
+/**
+ * arr是货币数组，其中的值都是正数。
+ * 再给定一个正数aim
+ * 每个值都认为是一张货币，
+ * 返回组成aim的最少货币数
+ * 注意：
+ * 因为是求最少货币数，所以每一张货币认为是相同或者不同就不重要了。
+ */
 public class Code04_MinCoinsOnePaper {
 
 	public static int minCoins(int[] arr, int aim) {
