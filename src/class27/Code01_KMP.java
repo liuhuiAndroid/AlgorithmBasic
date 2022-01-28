@@ -1,5 +1,8 @@
 package class27;
 
+/**
+ * KMP算法是一种改进的字符串匹配算法，由D.E.Knuth，J.H.Morris和V.R.Pratt提出的，因此人们称它为克努特—莫里斯—普拉特操作（简称KMP算法）
+ */
 public class Code01_KMP {
 
 	public static int getIndexOf(String s1, String s2) {
