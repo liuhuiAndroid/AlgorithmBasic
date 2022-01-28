@@ -1,5 +1,9 @@
 package class28;
 
+/**
+ * Manacher算法：求回文串
+ * 最右回文边界
+ */
 public class Code01_Manacher {
 
 	public static int manacher(String s) {
