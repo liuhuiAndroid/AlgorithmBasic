@@ -1,5 +1,25 @@
 package class30;
 
+/**
+ * 二叉树的Morris遍历
+ * 二叉树之前的遍历方式有空间浪费的问题，优化空间复杂度
+ * Morris遍历时间复杂度O(N)，额外空间复杂度O(1)，通过利用原树中大量空闲指针的方式，达到节省空间的目的
+ *
+ * 假设来到当前节点cur，开始时cur来到头节点位置
+ * 1）如果cur没有左孩子，cur向右移动(cur = cur.right)
+ * 2）如果cur有左孩子，找到左子树上最右的节点mostRight：
+ * 		a.如果mostRight的右指针指向空，让其指向cur，
+ * 		然后cur向左移动(cur = cur.left)
+ * 		b.如果mostRight的右指针指向cur，让其指向null，
+ * 		然后cur向右移动(cur = cur.right)
+ * 3）cur为空时遍历停止
+ *
+ * Morris遍历实现二叉树的先序、中序、后序遍历
+ *
+ * 题目：
+ * Morris遍历的实现
+ * 给定一棵二叉树的头节点head，求以head为头的树中，最小深度是多少？
+ */
 public class Code01_MorrisTraversal {
 
 	public static class Node {
