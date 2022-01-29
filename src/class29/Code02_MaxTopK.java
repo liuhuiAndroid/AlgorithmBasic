@@ -2,6 +2,13 @@ package class29;
 
 import java.util.Arrays;
 
+/**
+ * 给定一个无序数组arr中，给定一个正数k，返回top k个最大的数
+ * 不同时间复杂多三个方法：
+ * 1. O(N*logN)
+ * 2. O(N+K*logN)
+ * 3. O(N+K*logK)
+ */
 public class Code02_MaxTopK {
 
 	// 时间复杂度O(N*logN)
