@@ -1,5 +1,10 @@
 package class01;
 
+/**
+ * 局部最小值问题
+ * 为什么能二分：1）数据状况特殊 2）问题本身特殊
+ * 二分不一定要求有序：
+ */
 public class Code06_BSAwesome {
 
 	public static int getLessIndex(int[] arr) {

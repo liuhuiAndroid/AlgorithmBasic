@@ -3,7 +3,8 @@ package class01;
 import java.util.Arrays;
 
 /**
- * 二分法
+ * 使用二分法在一个有序数组中，找某个数是否存在
+ * 时间复杂度 O(logN)
  */
 public class Code04_BSExist {
 
