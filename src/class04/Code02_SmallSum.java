@@ -1,5 +1,8 @@
 package class04;
 
+/**
+ * 小和问题 O(N*logN)
+ */
 public class Code02_SmallSum {
 
 	public static int smallSum(int[] arr) {

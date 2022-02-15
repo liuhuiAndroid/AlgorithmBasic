@@ -1,5 +1,8 @@
 package class04;
 
+/**
+ * 数组中有多少个逆序对
+ */
 public class Code03_ReversePair {
 
 	public static int reverPairNumber(int[] arr) {

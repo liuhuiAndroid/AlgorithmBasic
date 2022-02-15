@@ -1,8 +1,12 @@
 package class04;
 
+/**
+ * 归并排序 O(N*logN) master公式
+ *
+ */
 public class Code01_MergeSort {
 
-	// 递归方法实现
+	// 递归方法实现归并排序
 	public static void mergeSort1(int[] arr) {
 		if (arr == null || arr.length < 2) {
 			return;
@@ -25,6 +29,7 @@ public class Code01_MergeSort {
 	}
 
 	public static void merge(int[] arr, int L, int M, int R) {
+		// 辅助数组
 		int[] help = new int[R - L + 1];
 		int i = 0;
 		int p1 = L;
