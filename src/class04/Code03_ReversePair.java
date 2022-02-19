@@ -1,7 +1,9 @@
 package class04;
 
 /**
- * 数组中有多少个逆序对
+ * 经典考题：数组中有多少个逆序对
+ * 逆序对：左数比右数小
+ * 从右往左拷贝，比较右组出现的逆序对
  */
 public class Code03_ReversePair {
 
