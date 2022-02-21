@@ -15,9 +15,9 @@ public class Code03_HeapSort {
 //			heapInsert(arr, i); // O(logN)
 //		}
 		// O(N)
-		for (int i = arr.length - 1; i >= 0; i--) {
-			heapify(arr, i, arr.length);
-		}
+//		for (int i = arr.length - 1; i >= 0; i--) {
+//			heapify(arr, i, arr.length);
+//		}
 		int heapSize = arr.length;
 		swap(arr, 0, --heapSize);
 		// O(N*logN)
