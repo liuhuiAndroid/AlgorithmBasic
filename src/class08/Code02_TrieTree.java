@@ -2,15 +2,26 @@ package class08;
 
 import java.util.HashMap;
 
+/**
+ * prefix tree trie
+ * 1。单个字符串中，字符从前到后到加到一颗多叉数上
+ * 2。字符放在路上，节点上有专属到数据项（常见到是pass和end值）
+ * 3。所有样本都这样添加，如果没有路就新建，如有路就复用
+ * 4。沿途节点都pass值增加1，每个字符串结束时来到到节点end值增加1
+ * 可以完成前缀相关的查询
+ */
 // 该程序完全正确
 public class Code02_TrieTree {
 
 	public static class Node1 {
+		// 有几个字符串通过此节点
 		public int pass;
+		// 当前字符串是否以此为尾节点
 		public int end;
+		// 下级数组
 		public Node1[] nexts;
 
-		// char tmp = 'b'  (tmp - 'a')
+		// char tmp = 'b'  (tmp - 'a') 找路
 		public Node1() {
 			pass = 0;
 			end = 0;
@@ -36,6 +47,7 @@ public class Code02_TrieTree {
 			if (word == null) {
 				return;
 			}
+			// 字符串拆成数组
 			char[] str = word.toCharArray();
 			Node1 node = root;
 			node.pass++;
@@ -60,6 +72,7 @@ public class Code02_TrieTree {
 				for (int i = 0; i < chs.length; i++) {
 					path = chs[i] - 'a';
 					if (--node.nexts[path].pass == 0) {
+						// Java头节点分离，JVM会自动回收
 						node.nexts[path] = null;
 						return;
 					}

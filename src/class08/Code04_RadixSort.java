@@ -2,9 +2,13 @@ package class08;
 
 import java.util.Arrays;
 
+/**
+ * 基数排序
+ */
 public class Code04_RadixSort {
 
 	// only for no-negative value
+	// 只能适用于非负数，如果真的是有负数，可以整个数组+某个值再排序
 	public static void radixSort(int[] arr) {
 		if (arr == null || arr.length < 2) {
 			return;
@@ -12,6 +16,9 @@ public class Code04_RadixSort {
 		radixSort(arr, 0, arr.length - 1, maxbits(arr));
 	}
 
+	/**
+	 * 求最大值的位数
+	 */
 	public static int maxbits(int[] arr) {
 		int max = Integer.MIN_VALUE;
 		for (int i = 0; i < arr.length; i++) {
