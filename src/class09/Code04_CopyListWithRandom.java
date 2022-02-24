@@ -2,6 +2,12 @@ package class09;
 
 import java.util.HashMap;
 
+/**
+ * random指针是单链表节点结构中新增的指针，random可能指向链表中的任意一个节点，也可能指向null。
+ * 给定一个由Node节点类型的无环单链表的头节点head，
+ * 请实现一个函数完成这个链表的复制，并返回复制的新链表的头节点
+ * 要求：时间复杂度O(N)，额外空间复杂度O(1)
+ */
 // 测试链接 : https://leetcode.com/problems/copy-list-with-random-pointer/
 public class Code04_CopyListWithRandom {
 

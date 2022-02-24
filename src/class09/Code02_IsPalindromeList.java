@@ -2,6 +2,13 @@ package class09;
 
 import java.util.Stack;
 
+/**
+ * 给定一个单链表定头节点head，请判断该链表是否为回文结构。
+ * 1。哈希表方法特别简单。笔试用：比如用栈
+ * 2。改原链表定方法就需要注意边界了。面试用
+ *
+ * 1234321
+ */
 public class Code02_IsPalindromeList {
 
 	public static class Node {
