@@ -1,5 +1,11 @@
 package class10;
 
+/**
+ * 二叉树的先序、中序、后序遍历
+ * 先序：任何子数的处理顺序都是，先头节点、再左子树，然后右子树
+ * 中序：任何子数的处理顺序都是，先左子树、再头节点，然后右子树
+ * 后序：任何子数的处理顺序都是，先左子树、再右子树，然后头节点
+ */
 public class Code02_RecursiveTraversalBT {
 
 	public static class Node {

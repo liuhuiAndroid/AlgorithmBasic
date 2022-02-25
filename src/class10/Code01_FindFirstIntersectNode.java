@@ -1,5 +1,15 @@
 package class10;
 
+/**
+ * 给定两个可能有环也可能无环的单链表，头节点head1和head2。
+ * 请实现一个函数，如果两个链表相交，请返回相交的第一个节点；如果不相交，返回null。
+ * 要求：如果两个链表长度之和为N，时间复杂度请达到O(N)，额外空间复杂度请达到O(1)。
+ *
+ * head1找loop1，head2找loop2
+ * 1。loop1 == loop2 == null；判断end1 end2 不是一个内存地址，则不相交；否则。head1先走 head1.length - head2.length 然后一起走，一定能找到第一个相交节点
+ * 2。一个有环一个无环：不可能相交
+ * 3。两个链表都有环：1。入环节点同一个2。入环节点不相同
+ */
 public class Code01_FindFirstIntersectNode {
 
 	public static class Node {
@@ -57,6 +67,7 @@ public class Code01_FindFirstIntersectNode {
 		}
 		Node cur1 = head1;
 		Node cur2 = head2;
+		// n正数，head1更长，否则head2更长
 		int n = 0;
 		while (cur1.next != null) {
 			n++;
