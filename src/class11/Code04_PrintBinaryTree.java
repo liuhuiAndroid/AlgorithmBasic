@@ -1,5 +1,8 @@
 package class11;
 
+/**
+ * 打印出二叉树的样子
+ */
 public class Code04_PrintBinaryTree {
 
 	public static class Node {
