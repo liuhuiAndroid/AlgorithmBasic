@@ -2,6 +2,13 @@ package class14;
 
 import java.util.HashSet;
 
+/**
+ * 给定一个字符串str，只由X和.两种字符构成
+ * X表示墙，不能放灯，也不需要点亮
+ * .表示居民点，可以放灯，需要点亮
+ * 如果灯放在i位置，可以让i-1，i和i+1三个位置点亮
+ * 返回如果点亮str中所有需要点亮灯位置，至少需要几盏灯
+ */
 public class Code01_Light {
 
 	public static int minLight1(String road) {
