@@ -5,7 +5,16 @@ import java.util.HashSet;
 import java.util.PriorityQueue;
 import java.util.Set;
 
-// undirected graph only
+/**
+ * undirected graph only
+ * 最小生成树算法之Prim 无向图
+ * 1。可以从任意节点出发来寻找最小生成树
+ * 2。某个点假如到被选取到点中后，解锁这个点出发点所有新的边
+ * 3。在所有解锁的边中选最小的边，然后看看这个边会不会形成环
+ * 4。如果会，不要当前边，继续考察剩下解锁的边中最小的边，重复3
+ * 5。如果不会，要当前边，将该边的指向点加入到被选取到点中，重复2
+ * 6。当所有点都被选取，最小生成树就得到了
+ */
 public class Code05_Prim {
 
 	public static class EdgeComparator implements Comparator<Edge> {

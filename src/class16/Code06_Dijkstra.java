@@ -4,7 +4,10 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map.Entry;
 
-// no negative weight
+/**
+ * no negative weight
+ * 有向无负权重的图
+ */
 public class Code06_Dijkstra {
 
 	public static HashMap<Node, Integer> dijkstra1(Node from) {
