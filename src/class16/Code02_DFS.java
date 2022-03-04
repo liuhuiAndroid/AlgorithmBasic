@@ -12,6 +12,7 @@ public class Code02_DFS {
         if (node == null) {
             return;
         }
+        // 目前的整条路径
         Stack<Node> stack = new Stack<>();
         HashSet<Node> set = new HashSet<>();
         stack.add(node);
