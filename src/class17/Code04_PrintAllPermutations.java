@@ -3,6 +3,10 @@ package class17;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 打印一个字符串的全部排列
+ * 打印一个字符串的全部排列，要求不要出现重复的排列
+ */
 public class Code04_PrintAllPermutations {
 
 	public static List<String> permutation1(String s) {
@@ -20,6 +24,11 @@ public class Code04_PrintAllPermutations {
 		return ans;
 	}
 
+	/**
+	 * @param rest 所有的数据
+	 * @param path 可能的结果
+	 * @param ans 返回的结果
+	 */
 	public static void f(ArrayList<Character> rest, String path, List<String> ans) {
 		if (rest.isEmpty()) {
 			ans.add(path);
@@ -34,6 +43,9 @@ public class Code04_PrintAllPermutations {
 		}
 	}
 
+	/**
+	 * 排列组合方法
+	 */
 	public static List<String> permutation2(String s) {
 		List<String> ans = new ArrayList<>();
 		if (s == null || s.length() == 0) {
@@ -104,7 +116,6 @@ public class Code04_PrintAllPermutations {
 		for (String str : ans3) {
 			System.out.println(str);
 		}
-
 	}
 
 }
