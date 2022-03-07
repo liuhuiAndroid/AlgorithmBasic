@@ -1,7 +1,10 @@
 package class19;
 
-// 这个问题leetcode上可以直接测
-// 链接：https://leetcode.com/problems/longest-common-subsequence/
+/**
+ * 求最长公共子序列
+ * 这个问题leetcode上可以直接测
+ * 链接：https://leetcode.com/problems/longest-common-subsequence/
+ */
 public class Code04_LongestCommonSubsequence {
 
 	public static int longestCommonSubsequence1(String s1, String s2) {

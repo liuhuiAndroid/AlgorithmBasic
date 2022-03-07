@@ -2,6 +2,14 @@ package class19;
 
 import java.util.HashMap;
 
+/**
+ * 给定一个字符串str，给定一个字符串类型的数组arr，出现的字符都是小写英文
+ * arr每一个字符串，代表一张贴纸，你可以把每个字符剪开使用，目的是拼出str来
+ * 返回需要至少多少张贴纸可以完成这个任务
+ * 例子：str = "babac"，arr = {"ba","c","abcd"}
+ * 至少需要两张贴纸"ba"和"abcd"，因为使用这两张贴纸，把每一个字符串单独剪开，
+ * 含有2个a、2个b、1个c。是可以拼出str的。所以返回2
+ */
 // 本题测试链接：https://leetcode-cn.com/problems/stickers-to-spell-word/
 public class Code03_StickersToSpellWord {
 
@@ -12,7 +20,7 @@ public class Code03_StickersToSpellWord {
 
 	// 所有贴纸stickers，每一种贴纸都有无穷张
 	// target
-	// 最少张数
+	// 返回最少张数
 	public static int process1(String[] stickers, String target) {
 		if (target.length() == 0) {
 			return 0;
