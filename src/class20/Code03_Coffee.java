@@ -79,6 +79,7 @@ public class Code03_Coffee {
 
 	// 优良一点的暴力尝试的方法
 	public static int minTime1(int[] arr, int n, int a, int b) {
+		// 小根堆
 		PriorityQueue<Machine> heap = new PriorityQueue<Machine>(new MachineComparator());
 		for (int i = 0; i < arr.length; i++) {
 			heap.add(new Machine(0, arr[i]));
@@ -106,7 +107,6 @@ public class Code03_Coffee {
 		int selfClean1 = Math.max(drinks[index], free) + wash;
 		int restClean1 = bestTime(drinks, wash, air, index + 1, selfClean1);
 		int p1 = Math.max(selfClean1, restClean1);
-
 		// index号杯子 决定挥发
 		int selfClean2 = drinks[index] + air;
 		int restClean2 = bestTime(drinks, wash, air, index + 1, free);
@@ -130,6 +130,9 @@ public class Code03_Coffee {
 		return bestTimeDp(drinks, a, b);
 	}
 
+	/**
+	 * 动态规划
+	 */
 	public static int bestTimeDp(int[] drinks, int wash, int air) {
 		int N = drinks.length;
 		int maxFree = 0;
@@ -198,7 +201,6 @@ public class Code03_Coffee {
 			}
 		}
 		System.out.println("测试结束");
-
 	}
 
 }
