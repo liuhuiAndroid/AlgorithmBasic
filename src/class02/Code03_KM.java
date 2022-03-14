@@ -46,7 +46,7 @@ public class Code03_KM {
 			}
 		}
 		int ans = 0;
-		for (int i = 0; i < 32; i++) {
+		for (int i = 0; i < 32; i++) { // for循环32次，是固定时间
 			if (t[i] % m != 0) {
 				if (t[i] % m == k) {
 					ans |= (1 << i);
