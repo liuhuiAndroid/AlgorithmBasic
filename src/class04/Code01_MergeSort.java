@@ -33,6 +33,10 @@ public class Code01_MergeSort {
         merge(arr, L, mid, R);
     }
 
+    /**
+     * L-M 已经有序
+     * M-R 已经有序
+     */
     public static void merge(int[] arr, int L, int M, int R) {
         // 辅助数组
         int[] help = new int[R - L + 1];

@@ -35,8 +35,10 @@ public class Code02_SmallSum {
         int p1 = L;
         int p2 = m + 1;
         // 去掉计算小和res逻辑，和标准的归并排序逻辑一摸一样
+        // *****************
         int res = 0;
         while (p1 <= m && p2 <= r) {
+            // *****************
             res += arr[p1] < arr[p2] ? (r - p2 + 1) * arr[p1] : 0;
             help[i++] = arr[p1] < arr[p2] ? arr[p1++] : arr[p2++];
         }
@@ -49,6 +51,7 @@ public class Code02_SmallSum {
         for (i = 0; i < help.length; i++) {
             arr[L + i] = help[i];
         }
+        // *****************
         return res;
     }
 
