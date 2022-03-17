@@ -20,7 +20,7 @@ package class05;
  * 如果sum[0,j]为x，目标为[lower,upper]
  * 那么sum[0,i-1]目标为[x-upper,x-lower]
  * <p>
- * 求必须以j位置结尾的子数组有多少个在[lower,upper]范围上
+ * 求必须以i位置结尾的子数组有多少个在[lower,upper]范围上
  * 等同于，求i之前的所有前缀和中，有多少个前缀和在[x-upper,x-lower]上
  * <p>
  * merge sort，右组每一个数，左组有多少个数落在[x-upper,x-lower]上

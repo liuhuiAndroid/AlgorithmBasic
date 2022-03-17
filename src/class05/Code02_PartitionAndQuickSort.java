@@ -1,5 +1,8 @@
 package class05;
 
+/**
+ * 快排： 小于等于区域和大于区域
+ */
 public class Code02_PartitionAndQuickSort {
 
     public static void swap(int[] arr, int i, int j) {
