@@ -3,6 +3,10 @@ package class06;
 import java.util.Arrays;
 import java.util.PriorityQueue;
 
+/**
+ * 不完全无序数组，移动距离不超过K，排序
+ * 准备一个K大小的小根堆，可以使用系统实现的优先队列
+ */
 public class Code04_SortArrayDistanceLessK {
 
 	public static void sortedArrDistanceLessK(int[] arr, int k) {

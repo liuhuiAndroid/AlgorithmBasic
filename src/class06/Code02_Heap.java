@@ -3,6 +3,13 @@ package class06;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
+/**
+ * 堆结构，优先队列一个东西
+ * 完全二叉树
+ * 1：左孩子2i+1，右孩子2i+2，父亲(i-1)/2
+ * 大根堆和小根堆
+ * 系统实现：PriorityQueue
+ */
 public class Code02_Heap {
 
 	public static class MyMaxHeap {
@@ -42,8 +49,11 @@ public class Code02_Heap {
 			return ans;
 		}
 
-		// 新加进来的数，现在停在了index位置，请依次往上移动，
-		// 移动到0位置，或者干不掉自己的父亲了，停！
+		/**
+		 * 新加一个数
+		 * 新加进来的数，现在停在了index位置，请依次往上移动，
+		 * 移动到0位置，或者干不掉自己的父亲了，停！
+		 */
 		private void heapInsert(int[] arr, int index) {
 			// [index] [index-1]/2
 			// index == 0
@@ -53,8 +63,11 @@ public class Code02_Heap {
 			}
 		}
 
-		// 从index位置，往下看，不断的下沉
-		// 停：较大的孩子都不再比index位置的数大；已经没孩子了
+		/**
+		 * 移除一个数
+		 * 从index位置，往下看，不断的下沉
+		 * 停：较大的孩子都不再比index位置的数大；已经没孩子了
+		 */
 		private void heapify(int[] arr, int index, int heapSize) {
 			int left = index * 2 + 1;
 			while (left < heapSize) { // 如果有左孩子，有没有右孩子，可能有可能没有！
