@@ -5,14 +5,18 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 
-/*
+/**
+ * 加强堆：可以remove掉一个对象，O(logN)
  * T一定要是非基础类型，有基础类型需求包一层
  */
 public class HeapGreater<T> {
 
 	private ArrayList<T> heap;
+	// 反向索引表
 	private HashMap<T, Integer> indexMap;
+	// 堆的大小
 	private int heapSize;
+	// 比较器
 	private Comparator<? super T> comp;
 
 	public HeapGreater(Comparator<T> c) {
@@ -100,6 +104,9 @@ public class HeapGreater<T> {
 		}
 	}
 
+	/**
+	 * 交换的时候，反向索引表同步换
+	 */
 	private void swap(int i, int j) {
 		T o1 = heap.get(i);
 		T o2 = heap.get(j);

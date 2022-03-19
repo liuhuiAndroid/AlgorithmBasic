@@ -118,6 +118,9 @@ public class Code01_CoverMax {
 		return ans;
 	}
 
+	/**
+	 * 开始位置比较器
+	 */
 	public static class StartComparator implements Comparator<Line> {
 
 		@Override

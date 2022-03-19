@@ -5,6 +5,9 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 
+/**
+ *
+ */
 public class Code02_EveryStepShowBoss {
 
 	public static class Customer {
@@ -39,7 +42,9 @@ public class Code02_EveryStepShowBoss {
 
 	public static class WhosYourDaddy {
 		private HashMap<Integer, Customer> customers;
+		// 候选区
 		private HeapGreater<Customer> candHeap;
+		// 得奖区
 		private HeapGreater<Customer> daddyHeap;
 		private final int daddyLimit;
 
