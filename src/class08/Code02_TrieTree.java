@@ -3,7 +3,7 @@ package class08;
 import java.util.HashMap;
 
 /**
- * prefix tree trie
+ * prefix tree trie，Trie一般指字典树、前缀数
  * 1。单个字符串中，字符从前到后到加到一颗多叉数上
  * 2。字符放在路上，节点上有专属到数据项（常见到是pass和end值）
  * 3。所有样本都这样添加，如果没有路就新建，如有路就复用

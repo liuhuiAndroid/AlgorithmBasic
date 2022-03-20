@@ -5,6 +5,8 @@ import java.util.Arrays;
 /**
  * 计数排序
  * 桶排序的思想
+ * 数组每个值代表员工年纪，从小到大排序，开一个数组，将年龄放到指定桶里面
+ * 时间复杂度O(N)
  */
 public class Code03_CountSort {
 
