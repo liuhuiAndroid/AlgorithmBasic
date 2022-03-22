@@ -1,10 +1,12 @@
 package class10;
 
 /**
+ * 单链表中比较难的题
  * 给定两个可能有环也可能无环的单链表，头节点head1和head2。
  * 请实现一个函数，如果两个链表相交，请返回相交的第一个节点；如果不相交，返回null。
  * 要求：如果两个链表长度之和为N，时间复杂度请达到O(N)，额外空间复杂度请达到O(1)。
  *
+ * 使用HashMap查找是否有环，和使用快慢指针查找是否有环
  * head1找loop1，head2找loop2
  * 1。loop1 == loop2 == null；判断end1 end2 不是一个内存地址，则不相交；否则。head1先走 head1.length - head2.length 然后一起走，一定能找到第一个相交节点
  * 2。一个有环一个无环：不可能相交
@@ -36,7 +38,7 @@ public class Code01_FindFirstIntersectNode {
 		return null;
 	}
 
-	// 找到链表第一个入环节点，如果无环，返回null
+	// 使用快慢指针，找到链表第一个入环节点，如果无环，返回null
 	public static Node getLoopNode(Node head) {
 		if (head == null || head.next == null || head.next.next == null) {
 			return null;
