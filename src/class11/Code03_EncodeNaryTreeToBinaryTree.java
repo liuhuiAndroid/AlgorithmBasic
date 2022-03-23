@@ -5,6 +5,7 @@ import java.util.List;
 
 /**
  * 多叉树转二叉树
+ * 节点所有的孩子放在自己的右边界上
  */
 // 本题测试链接：https://leetcode.com/problems/encode-n-ary-tree-to-binary-tree
 public class Code03_EncodeNaryTreeToBinaryTree {

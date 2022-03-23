@@ -1,5 +1,9 @@
 package class11;
 
+/**
+ * 折纸问题
+ * 给定一个输入参数N，代表纸条都从下边向上方连续对折N次，请从上到下打印所有折痕都方向
+ */
 public class Code07_PaperFolding {
 
 	public static void printAllFolds(int N) {

@@ -4,6 +4,11 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ * 求二叉树最宽的层有多少个节点：按层遍历，
+ * 定义一个当前层结束的结尾节点变量
+ * 定义一个下一层结束的结尾节点变量
+ */
 public class Code05_TreeMaxWidth {
 
 	public static class Node {

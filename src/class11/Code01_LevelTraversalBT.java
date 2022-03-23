@@ -3,6 +3,11 @@ package class11;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ * 实现二叉树的按层遍历
+ * 1。其实就是宽度优先遍历，用队列
+ * 2。可以通过设置flag变量的方式，来实现某一层的结束
+ */
 public class Code01_LevelTraversalBT {
 
 	public static class Node {
