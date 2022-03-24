@@ -2,6 +2,12 @@ package class12;
 
 import java.util.LinkedList;
 
+/**
+ * 判断二叉树是否是完全二叉树
+ * 完全二叉树：全满或者是左边满
+ * 1。所有节点没左孩子必须没有右孩子
+ * 2。当第一次遇到左右孩子不双全，剩下遍历节点必须是叶子节点
+ */
 public class Code01_IsCBT {
 
 	public static class Node {

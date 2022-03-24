@@ -2,6 +2,10 @@ package class12;
 
 import java.util.ArrayList;
 
+/**
+ * 判断二叉树是不是搜索二叉树
+ * 搜索二叉树：二叉树所有节点，左侧节点都比自己小，右侧节点都比自己大
+ */
 public class Code02_IsBST {
 
 	public static class Node {

@@ -1,5 +1,8 @@
 package class12;
 
+/**
+ * 判断二叉树是不是满二叉树
+ */
 public class Code04_IsFull {
 
 	public static class Node {
