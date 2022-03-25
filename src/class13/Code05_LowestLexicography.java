@@ -4,6 +4,18 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.TreeSet;
 
+/**
+ * 贪心算法
+ * 给定一个由字符串组成的数组strs
+ * 必须把所有的字符串拼接起来
+ * 返回所有可能的拼接结果中，字典序最小的结果
+ *
+ * 贪心算法
+ * 1。最自然智慧的算法
+ * 2。用一种局部最功利的标准，总是做出在当前看来是最好的选择
+ * 3。难点在于证明局部最功利的标准可以得到全局最优解
+ * 4。对于贪心算法的学习主要以增加阅历和经验为主
+ */
 public class Code05_LowestLexicography {
 
 	public static String lowestString1(String[] strs) {

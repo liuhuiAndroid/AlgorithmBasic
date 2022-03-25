@@ -3,10 +3,15 @@ package class13;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 派对的最大快乐值
+ */
 public class Code04_MaxHappy {
 
 	public static class Employee {
+		// 这名员工可以带来的快乐值
 		public int happy;
+		// 这名员工有哪些直接下级
 		public List<Employee> nexts;
 
 		public Employee(int h) {
