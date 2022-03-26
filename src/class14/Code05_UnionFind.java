@@ -4,6 +4,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Stack;
 
+/**
+ * 并查集：解决图的连通性问题时间复杂度O(1)
+ */
 public class Code05_UnionFind {
 
 	public static class Node<V> {

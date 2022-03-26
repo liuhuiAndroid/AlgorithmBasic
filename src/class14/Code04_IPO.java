@@ -3,6 +3,15 @@ package class14;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
+/**
+ * 输入正数数组costs、profits、正数K、M
+ * costs[i]表示i号项目的花费
+ * profits[i]表示i号项目在扣除花费之后还能挣到到钱
+ * K表示你只能串行到最多做K个项目
+ * M表示你初始到资金
+ * 说明：每做完一个项目，马上获得到收益，可以支持你去做下一个项目。不能并行到做项目
+ * 输出：你最后获得到最大钱数
+ */
 public class Code04_IPO {
 
 	// 最多K个项目
