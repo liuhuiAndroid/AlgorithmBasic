@@ -3,6 +3,7 @@ package class15;
 // 本题为leetcode原题
 // 测试链接：https://leetcode.com/problems/friend-circles/
 // 可以直接通过
+// 时间复杂度 O(M*N)
 public class Code01_FriendCircles {
 
     public static int findCircleNum(int[][] M) {
