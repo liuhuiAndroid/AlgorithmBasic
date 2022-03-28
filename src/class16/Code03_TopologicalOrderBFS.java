@@ -6,7 +6,14 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * 拓扑排序
+ * 图的拓扑排序算法
+ * 1。在图中找到所有入度为0的点输出
+ * 2。把所有入度为0的点在图中删掉，继续找入度为0的点输出，周而复始
+ * 3。图的所有点都被删除后，一次输出都顺序就是拓扑排序
+ * 要求：有向图且其中没有环
+ * 应用：事件安排、编译顺序
+ * 不能循环依赖：拓扑排序
+ * 拓扑排序不唯一
  */
 // OJ链接：https://www.lintcode.com/problem/topological-sorting
 public class Code03_TopologicalOrderBFS {
