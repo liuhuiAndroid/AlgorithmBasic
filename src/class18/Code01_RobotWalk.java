@@ -1,5 +1,14 @@
 package class18;
 
+/**
+ * 假设有排成一行的N个位置，记为1～N，N一定大于或等于2
+ * 开始时机器人在其中的M位置上
+ * 如果机器人来到1位置，那么下一步只能往右来到2位置
+ * 如果机器人来到N位置，那么下一步只能往左来到N-1位置
+ * 如果机器人来到中间位置，那么下一步可以往左走或者往右走
+ * 规定机器人必须走K步，最终能来到P位置的方法有多少种
+ * 给定四个参数N、M、K、P，返回方法数
+ */
 public class Code01_RobotWalk {
 
 	public static int ways1(int N, int start, int aim, int K) {
@@ -9,6 +18,7 @@ public class Code01_RobotWalk {
 		return process1(start, K, aim, N);
 	}
 
+	// 尝试过程
 	// 机器人当前来到的位置是cur，
 	// 机器人还有rest步需要去走，
 	// 最终的目标是aim，
