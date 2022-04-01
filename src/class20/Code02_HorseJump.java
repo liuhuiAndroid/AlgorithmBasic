@@ -10,6 +10,7 @@ package class20;
  */
 public class Code02_HorseJump {
 
+    // 时间复杂度：暴力全展开 o(8^k)
     public static int jump(int a, int b, int k) {
         return process(0, 0, k, a, b);
     }
@@ -39,6 +40,7 @@ public class Code02_HorseJump {
         return ways;
     }
 
+    // 时间复杂度：O(k)
     public static int dp(int a, int b, int k) {
         int[][][] dp = new int[10][9][k + 1];
         dp[a][b][0] = 1;
