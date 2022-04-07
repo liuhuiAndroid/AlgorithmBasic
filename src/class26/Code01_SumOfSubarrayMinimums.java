@@ -1,5 +1,6 @@
 package class26;
 
+// 单调栈
 // 测试链接：https://leetcode.com/problems/sum-of-subarray-minimums/
 // subArrayMinSum1是暴力解
 // subArrayMinSum2是最优解的思路
