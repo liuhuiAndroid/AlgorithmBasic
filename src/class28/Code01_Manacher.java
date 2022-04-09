@@ -3,6 +3,10 @@ package class28;
 /**
  * Manacher算法：求回文串
  * 最右回文边界
+ * 1。i在R外，暴力扩
+ * 2。i在R内，i2在LR内
+ * 2。i在R内，i2不在LR内
+ * 2。i在R内，i2L压线
  */
 public class Code01_Manacher {
 
