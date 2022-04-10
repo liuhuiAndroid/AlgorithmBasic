@@ -6,7 +6,7 @@ import java.util.PriorityQueue;
 /**
  * 在无序数组中求第k小第数
  * 改写快排的方法 O(N*logN)
- * bfprt算法
+ * bfprt算法：比较讲究地选择划分值
  */
 public class Code01_FindMinKth {
 
